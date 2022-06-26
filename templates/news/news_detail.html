@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}{{ article.title }}{% endblock %}
+{% block content %}
+    <div class="features">
+        
+        <div class="continer alert alert-warning">    
+            <h1>{{ article.title }}</h1>
+            <p><span>{{ article.data.strftime('%b %d, %Y %H:%M:%S' ) }}</span></p>
+            <p>{{article.text}}</p>
+            <a href="/news/{{ article.id }}/del"><button class="btn btn-danger">Удалить</button></a>
+            <a href="/news/{{ article.id }}/update"><button class="btn btn-success">Редактировать</button></a>
+            <a href="/news" class="btn-back"><button class="btn btn-info">Назад</button></a>
+        </div>    
+               
+    </div>
+{% endblock %}

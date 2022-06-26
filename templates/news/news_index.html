@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}Новости{% endblock %}
+{% block content %}
+    <div class="features">
+        <h1>Новости на сайте</h1>
+            {% for el in article %}
+                <div class="alert alert-warning">
+                    <h3>{{el.title}}</h3>
+                    <p>{{el.anons}}</p>
+                    <p><span>Дата: {{ el.data.strftime('%b %d, %Y') }}</span></p>
+                    <a href="/news/{{ el.id }}" class="btn btn-warning">Читать дитальнее</a>
+                </div>
+            {% endfor %}    
+            
+    </div>
+{% endblock %}

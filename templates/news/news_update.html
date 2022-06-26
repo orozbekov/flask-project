@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}Добавить запись{% endblock %}
+{% block content %}
+    <div class="features">
+        <h1>Форма по добавлению статьи</h1>
+        <form method="post">
+            <input type="text" name="title" value="{{ article.title }}" class="form-control" placeholder="Название статьи"><br>  
+            <input type="text" name="anons" value="{{ article.anons }}" class="form-control" placeholder="Анонс статьи"><br>
+            <textarea name="full_text" cols="40" rows="10" class="form-control" placeholder="Текст статьи">{{ article.text }}</textarea><br>
+            <span></span>
+            <button class="btn btn-success" type="submit">Добавить статью</button>
+        </form>
+    </div>
+{% endblock %}

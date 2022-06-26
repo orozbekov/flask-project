@@ -1,0 +1,97 @@
+body {
+    background-image: url(../img/news_bkgd-compressor.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+aside{
+    position: fixed;
+    float: left;
+    background-image:url(../img/menu.png);
+    width: 20%;
+    padding:2.5%;
+    height: 100vh;
+    color: #fff;
+    border-right: 5px solid;
+    
+}
+a {
+    text-decoration: none;
+}
+
+aside img {
+    padding-right: 2px;
+    width: 80px;
+    float: left;
+    top: -8px;
+
+}
+
+aside .logo {
+    font-size: 27px;
+    margin-left: 10px;
+    position: relative;
+    top: 16px;
+}
+
+aside h3 {
+    margin-top: 50px;
+    font-size:28px;
+}
+
+aside ul {list-style: none;}
+aside ul li{
+    color: #fff;
+    display: block;
+    margin-top:20px;
+    transition: transform .3s ease;
+}
+
+aside ul li:hover, aside ul a:hover{
+    color: #18bbe4;
+    transform:scale(1.05);
+}
+
+main .features {
+    float: right;
+    color:rgb(252, 232, 169);
+    text-align: center;
+    width: 76%;
+}
+
+main .features h1 {
+    font-size: 53px;
+    font-weight: 600;
+    background-image:conic-gradient(
+        #ddc74b 0%, #ddc74b 30%, #ee4b2b 30%, #ee4b2b 72%, #00c2cb 72%, #cbc800 99%
+    );
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+main .features p {max-width: 400px; margin: 20px auto}
+
+.alert-warning {
+    float: center;
+    clear: both;
+    width: 400px;
+    margin: 20px 33%;
+    text-align: left;
+}
+
+form {
+    margin-left: 32%;
+    width: 500px;
+    margin-top:50px;
+}
+
+.continer {
+    width: 70vh;
+    margin: 10px 25%;
+    
+}
+
+.continer .btn-back{
+    float: right;
+}
